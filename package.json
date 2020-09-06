@@ -50,7 +50,7 @@
     "watchify": "^3.9.0",
     "webworkify": "^1.5.0",
     "yauzl": "github:dcposch/yauzl",
-    "zimmer": "^1.1.0"
+    "@jimpick/zimmer": "^1.1.0-1"
   },
   "homepage": "https://github.com/dcposch/datpedia#readme",
   "license": "ISC",

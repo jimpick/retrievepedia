@@ -6,7 +6,7 @@ const dataUriSync = require('datauri').sync
 
 const { rewriteImageUrls, rewriteLinks } = require('./relinker.js')
 
-if (3 !== process.argv.length) {
+if (process.argv.length !== 3) {
   console.log('Usage: ./scripts/transform.js <name>')
   process.exit()
 }
