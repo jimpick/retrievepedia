@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+// import SearchPage from './SearchPage.jsx'
+// import ArticlePage from './ArticlePage.jsx'
 
 function App() {
   return (
