@@ -1,17 +1,21 @@
 {
   "scripts": {
-    "start": "snowpack dev",
-    "build": "snowpack build",
+    "start": "snowpack dev --polyfill-node --reload",
+    "build": "snowpack build --polyfill-node --reload",
     "test": "jest",
     "format": "prettier --write \"src/**/*.{js,jsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx}\""
   },
   "dependencies": {
     "binary-search-bounds": "^2.0.4",
+    "buffer-es6": "^4.9.3",
     "normalize-for-search": "^2.1.0",
+    "pify": "^5.0.0",
     "react": "^16.13.1",
     "react-autocomplete": "^1.8.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "simple-concat": "^1.0.1",
+    "yauzl": "^2.10.0"
   },
   "devDependencies": {
     "@snowpack/app-scripts-react": "^1.10.0",

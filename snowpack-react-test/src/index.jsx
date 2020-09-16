@@ -1,24 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './App'
+import { openZip, getFile } from './unzip.js'
+import { urlNameToName } from './util.js'
+import { findItem } from './search.js'
+import './index.css'
 
 const SEARCH_INDEX_PATHS = {
   partial: '/list-partial.json',
-  full: '/list-full.tsv'
+  full: '/list-full.tsv',
 }
 
-//const zipFilePromise = openZip('/wiki.zip')
+const zipFilePromise = openZip()
 
 const store = {
   urlName: null, // null for the home page, or eg "Star_Wars" for that article
   citeNote: null,
   searchIndexes: {
     partial: [], // list of *top* articles, search normalized and sorted
-    partialPromise: null
+    partialPromise: null,
   },
   articleCache: {}, // article HTML cache, eg "Star_Wars": "<html>..."
-  search: null // current search, eg "sta", or null
+  search: null, // current search, eg "sta", or null
 }
 
 // Available for easier debugging:
@@ -88,7 +91,7 @@ async function fetchPartialIndex (indexName) {
   console.log(
     'loaded search index %s, %d entries',
     indexName,
-    searchIndex.length
+    searchIndex.length,
   )
 
   return searchIndex
@@ -99,7 +102,7 @@ function render () {
     <React.StrictMode>
       <App store={store} dispatch={dispatch} />
     </React.StrictMode>,
-    document.querySelector('#root')
+    document.querySelector('#root'),
   )
 }
 
@@ -121,7 +124,7 @@ function maybeScrollToCiteNote () {
   // Smoothly scroll to the citation location on page
   $citeNote.scrollIntoView({
     block: 'start',
-    inline: 'nearest'
+    inline: 'nearest',
   })
 }
 
@@ -203,5 +206,5 @@ async function getEntryData (urlName) {
 // Hot Module Replacement (HMR) - Remove this snippet to remove HMR.
 // Learn more: https://www.snowpack.dev/#hot-module-replacement
 if (import.meta.hot) {
-  import.meta.hot.accept();
+  import.meta.hot.accept()
 }
