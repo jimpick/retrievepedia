@@ -16,7 +16,7 @@ export default class SearchPage extends React.Component {
       left: '10%',
       bottom: 0,
       right: '10%',
-      backgroundImage: 'url(./sphere---DISABLED---.gif)',
+      backgroundImage: 'url(./sphere.gif)',
       backgroundSize: 'cover',
       backgroundRepeat: 'no-repeat',
       zIndex: -2
