@@ -36,9 +36,9 @@ async function init () {
   */
 
   window.addEventListener('hashchange', routeAndRender)
-  routeAndRender()
 
   await initSearchIndex('partial')
+  routeAndRender()
   // await initFullIndex()
   // TODO: load full search index from list.tsv
 }
