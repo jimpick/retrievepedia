@@ -38,16 +38,17 @@ export default class SearchPage extends React.Component {
           <div style={styleGlobe} />
         </div>
 
-        <h1>datpedia</h1>
+        <h1>ssshpedia</h1>
 
         <h2>
-          wikipedia over dat://<br />
+          wikipedia over filecoin//<br />
           <hr />
-          a peer-to-peer encyclopedia<br />
-          for the peer-to-peer web
+  	  for Slingshot Scavenger Hunt
         </h2>
 
         <SearchBox store={store} dispatch={dispatch} autoFocus />
+
+	<p>Based on Datpedia</p>
       </div>
     )
   }
