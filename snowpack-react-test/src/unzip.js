@@ -205,7 +205,7 @@ async function readPage (reader, page) {
   if (startFile.file === endFile.file) {
     const size = endFile.offset - startFile.offset
     console.log('Jim1 loading', startFile.file, size)
-    const url = `https://lotus.jimpick.com/wiki/${startFile.file}`
+    const url = `https://bafybeidnmh4wgw7dsj55wosa7hnbtm7uscyq4fj72pljbia6zutycwicye.ipfs.dweb.link/${startFile.file}`
     const res = await fetch(url)
     const abuf = await res.arrayBuffer()
     const abuf2 = abuf.slice(startFile.offset, endFile.offset + 1)
@@ -214,7 +214,7 @@ async function readPage (reader, page) {
     // First file
     const sizeA = startFile.fileSize - startFile.offset
     console.log('Jim2a loading', startFile.file, sizeA)
-    const urlA = `https://lotus.jimpick.com/wiki/${startFile.file}`
+    const urlA = `https://bafybeidnmh4wgw7dsj55wosa7hnbtm7uscyq4fj72pljbia6zutycwicye.ipfs.dweb.link/${startFile.file}`
     const resA = await fetch(urlA)
     const abufA = await resA.arrayBuffer()
     const abufA2 = abufA.slice(startFile.offset, startFile.fileSize)
@@ -222,7 +222,7 @@ async function readPage (reader, page) {
     // Second file
     const sizeB = endFile.offset
     console.log('Jim2b loading', endFile.file, sizeB)
-    const urlB = `https://lotus.jimpick.com/wiki/${endFile.file}`
+    const urlB = `https://bafybeidnmh4wgw7dsj55wosa7hnbtm7uscyq4fj72pljbia6zutycwicye.ipfs.dweb.link/${endFile.file}`
     const resB = await fetch(urlB)
     const abufB = await resB.arrayBuffer()
     const abufB2 = abufB.slice(0, endFile.offset)
