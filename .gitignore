@@ -1,13 +1,4 @@
-node_modules/
-
-download/
-extract/
-transform/
-build/
-
-static/bundle.js
-static/wiki.zip
-static/list-full.json
-static/list-partial.json
-
-.cache/
+.build
+build
+web_modules
+node_modules
