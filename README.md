@@ -17,7 +17,7 @@ make Filecoin deals right away instead of staging the file)
 It should be possible to concatenate all the wiki.zip.* files and then unzip it
 to see the data.
 
-(temporary) Demo: http://bafybeigmiz54s2tulqzrmz5mcatwh6x3mxf7bgexpyztnxttkf5tnkwluu.ipfs.dweb.link/
+(temporary) Demo: http://bafybeicuxqzeml6ws6awfxkpdnzp67oshkic6y7dor35vxx5k57rnfiabi.ipfs.dweb.link/
 
 ## Original Project
 
