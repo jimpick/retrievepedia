@@ -38,12 +38,10 @@ export default class SearchPage extends React.Component {
           <div style={styleGlobe} />
         </div>
 
-        <h1>ssshpedia</h1>
+        <h1>Retrievepedia</h1>
 
         <h2>
-          wikipedia over filecoin//<br />
-          <hr />
-  	  for Slingshot Scavenger Hunt
+          Wikipedia over IPFS + Filecoin//<br />
         </h2>
 
         <SearchBox store={store} dispatch={dispatch} autoFocus />

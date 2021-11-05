@@ -20,7 +20,7 @@ export default class ArticlePage extends React.Component {
     return (
       <div className='ArticlePage'>
         <header>
-          <a href='#'>ssshpedia</a>
+          <a href='#'>Retrievepedia</a>
           <SearchBox store={store} dispatch={dispatch} whiteBg />
         </header>
         <div
