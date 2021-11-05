@@ -9,20 +9,22 @@
   "dependencies": {
     "binary-search-bounds": "^2.0.4",
     "buffer-es6": "^4.9.3",
+    "node-fetch": "^3.0.0",
     "normalize-for-search": "^2.1.0",
     "pify": "^5.0.0",
-    "react": "^16.13.1",
+    "react": "16.13.1",
     "react-autocomplete": "^1.8.1",
-    "react-dom": "^16.13.1",
+    "react-dom": "16.13.1",
+    "setimmediate": "^1.0.5",
     "simple-concat": "^1.0.1",
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
-    "@snowpack/app-scripts-react": "^1.10.0",
+    "@snowpack/app-scripts-react": "1.10.0",
     "@testing-library/jest-dom": "^5.5.0",
     "@testing-library/react": "^10.0.3",
     "jest": "^26.2.2",
     "prettier": "^2.0.5",
-    "snowpack": "^2.10.3"
+    "snowpack": "2.10.3"
   }
 }
